@@ -9,11 +9,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class $1_BluestoneGoldCoin20gm {
-		
-		@Test
-		public void f() {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\git\\Batch32\\Softwares\\chromedriver.exe");
+public class $2_BluestoneGoldCoin50gm {
+	
+	  @Test
+	  public void f() {
+		  System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\git\\Batch32\\Softwares\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
@@ -24,14 +24,14 @@ public class $1_BluestoneGoldCoin20gm {
 			act.moveToElement(driver.findElement(By.xpath("//li[@id='goldCoins']/a"))).build().perform();
 			act.moveToElement(driver.findElement(By.xpath("//span[text()='Plain Gold Coins']"))).build().perform();
 			driver.findElement(
-					By.xpath("//span[text()='Plain Gold Coins']/parent::div/parent::div/ul/li/span[text()='20 gram']")).click();
+					By.xpath("//span[text()='Plain Gold Coins']/parent::div/parent::div/ul/li/span[text()='50 gram']")).click();
 			
-			Assert.assertTrue(driver.findElement(By.xpath("//span[text()='(20 gram)']")).isDisplayed());		
-			Assert.assertEquals(driver.findElement(By.xpath("//span[text()='(20 gram)']")).getText(), "(20 gram)");
-			System.out.println("20 gram gold coin is diplayed......");
+			Assert.assertTrue(driver.findElement(By.xpath("//span[text()='(50 gram)']")).isDisplayed());
+			Assert.assertEquals(driver.findElement(By.xpath("//span[text()='(50 gram)']")).getText(), "(50 gram)");
+			System.out.println("50 gram gold coin is diplayed......");
 			driver.close();
 
-		}
-	
+	  
+	}
 
 }
