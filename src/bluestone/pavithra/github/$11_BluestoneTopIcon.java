@@ -17,7 +17,7 @@ public class $11_BluestoneTopIcon {
 			System.setProperty("webdriver.chrome.driver", "D:\\TestYantra\\DriverProject\\Softwares\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
+System.out.println("commit ");
 			
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			driver.get("https://www.bluestone.com");
